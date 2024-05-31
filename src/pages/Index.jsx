@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Box,
   Button,
@@ -43,6 +44,11 @@ const Index = () => {
         <Heading as="h1" size="xl" mb={6}>
           Todo App
         </Heading>
+        <Link to="/login">
+          <Button colorScheme="teal" variant="outline" mt={4}>
+            Go to Login
+          </Button>
+        </Link>
         <Flex w="100%" mb={4}>
           <Input
             placeholder="Add a new todo"
